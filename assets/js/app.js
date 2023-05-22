@@ -21,4 +21,5 @@ btnDecr.addEventListener("click", () => {
 //reset the counter
 btnReset.addEventListener("click", () => {
   count.innerText = 0;
+  inpStep.value = 1;
 });
