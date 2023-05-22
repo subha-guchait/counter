@@ -6,12 +6,16 @@ const btnReset = document.getElementById("res-btn");
 
 //increment the counter
 btnIncr.addEventListener("click", () => {
-  count.innerText = parseInt(count.innerText) + parseInt(inpStep.value);
+  if (inpStep.value) {
+    count.innerText = parseInt(count.innerText) + parseInt(inpStep.value);
+  }
 });
 
 //decrement the counter
 btnDecr.addEventListener("click", () => {
-  count.innerText = parseInt(count.innerText) - parseInt(inpStep.value);
+  if (inpStep.value) {
+    count.innerText = parseInt(count.innerText) - parseInt(inpStep.value);
+  }
 });
 
 //reset the counter
