@@ -32,6 +32,17 @@ button {
   font-weight: 500;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #85ffc7;
+}
+
+button:active {
+  background-color: #61cc8b;
 }
 
 .control {
